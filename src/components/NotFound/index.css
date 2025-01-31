@@ -1,0 +1,11 @@
+.not-found {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notfound-content {
+  min-height: 100vh;
+}

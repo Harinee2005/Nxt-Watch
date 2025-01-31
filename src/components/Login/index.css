@@ -1,0 +1,150 @@
+.light-bg {
+  background-color: #f1f1f1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-bg {
+  background-color: #231f20;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-login-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.dark-login-container {
+  background-color: #0f0f0f;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.logo-image {
+  width: 100px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.light-label {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.dark-label {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.light-input {
+  border: #475569 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  font-family: 'Roboto';
+  font-size: 10px;
+  background-color: transparent;
+  color: #0f0f0f;
+}
+
+.dark-input {
+  border: #475569 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  font-family: 'Roboto';
+  font-size: 10px;
+  background-color: transparent;
+
+  color: #ffffff;
+}
+
+.show-password {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.login-btn {
+  background-color: #3b82f6;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error-msg {
+  color: #ff0000;
+  font-family: 'Roboto';
+  font-size: 10px;
+  margin-top: 5px;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .light-login-container {
+    width: 50%;
+    padding: 40px;
+  }
+  .dark-login-container {
+    width: 50%;
+    padding: 40px;
+  }
+  .logo-image {
+    width: 200px;
+  }
+  .light-label {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  .dark-label {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  .light-input {
+    font-size: 13px;
+    padding: 8px;
+  }
+  .dark-input {
+    font-size: 13px;
+    padding: 8px;
+  }
+  .show-password {
+    margin-bottom: 8px;
+  }
+  .login-btn {
+    padding: 8px;
+  }
+  .error-msg {
+    font-size: 13px;
+  }
+}

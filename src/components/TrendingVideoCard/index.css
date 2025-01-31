@@ -1,0 +1,90 @@
+.trend-video-card-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.trend-thumbnail {
+  width: 100%;
+}
+
+.trend-details-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.trend-profile {
+  height: 50px;
+  width: 50px;
+  margin-top: 15px;
+  margin-right: 7px;
+}
+
+.trend-about-video {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.trend-title {
+  font-family: 'Roboto';
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.light-title-trend {
+  color: #231f20;
+}
+
+.dark-title-trend {
+  color: #f1f1f1;
+}
+
+.light-name-trend {
+  color: #606060;
+}
+
+.dark-name-trend {
+  color: #909090;
+}
+
+.trend-name {
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.trend-views {
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 576px) {
+  .trend-video-card-container {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 20px;
+  }
+  .trend-thumbnail {
+    width: 40%;
+    margin-right: 20px;
+  }
+  .trend-profile {
+    display: none;
+  }
+  .trend-title {
+    font-size: 30px;
+  }
+  .trend-views {
+    font-size: 16px;
+  }
+}

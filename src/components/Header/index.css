@@ -1,0 +1,280 @@
+.header-container {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+.header-container div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.light-header-small {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.dark-header-small {
+  background-color: #181818;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-logo {
+  width: 150px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.light-icons {
+  color: #0f0f0f;
+  font-size: 25px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.dark-icons {
+  color: #ffffff;
+  font-size: 25px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.header-large-container {
+  display: none;
+}
+
+.logout-popup-light {
+  background-color: #ffffff;
+  align-self: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 300px;
+  padding: 20px;
+}
+
+.logout-popup-dark {
+  background-color: #0f0f0f;
+  height: 180px;
+  width: 300px;
+  align-self: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logout-popup-heading-light {
+  color: #0f0f0f;
+  font-family: 'Roboto';
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.logout-popup-heading-dark {
+  color: #f9f9f9;
+  font-family: 'Roboto';
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.popup-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cancel-btn {
+  color: #606060;
+  border: 1px #606060 solid;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: 'Roboto';
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: 'Roboto';
+  cursor: pointer;
+}
+
+.popup-menu-light {
+  background-color: #f9f9f9;
+  height: 100vh;
+  width: 100vw;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-menu-dark {
+  background-color: #000000;
+  height: 100vh;
+  width: 100vw;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-icon {
+  position: absolute;
+  right: 30px;
+}
+
+.popup-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.small-li {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.light-nav-item {
+  color: #231f20;
+  font-size: 18px;
+}
+
+.dark-nav-item {
+  color: #f4f4f4;
+  font-size: 18px;
+}
+
+.icon-sidebar {
+  color: #7e858e;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+.link {
+  text-decoration: none;
+  margin: 0;
+}
+
+.clicked .icon-sidebar {
+  color: #ff0000;
+}
+
+.clicked .light-nav-item {
+  font-weight: bold;
+}
+
+.clicked .dark-nav-item {
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.light-nav-item.clicked {
+  background-color: #e2e8f0;
+}
+
+.dark-nav-item.clicked {
+  background-color: #383838;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    display: none;
+  }
+  .header-large-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popup-menu {
+    display: none;
+  }
+
+  .details-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-pic {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    margin-left: 5px;
+  }
+
+  .light-icons {
+    font-size: 40px;
+  }
+
+  .dark-icons {
+    font-size: 40px;
+  }
+
+  .logout-btn {
+    font-family: 'Roboto';
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    width: 100px;
+  }
+  .light-logout {
+    color: #3b82f6;
+    border: #3b82f6 1px solid;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+  .dark-logout {
+    color: #f9f9f9;
+    border: #f9f9f9 solid 1px;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+
+  .logout-popup-light {
+    width: 400px;
+  }
+
+  .logout-popup-dark {
+    width: 400px;
+  }
+}

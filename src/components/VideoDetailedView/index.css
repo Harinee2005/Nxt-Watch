@@ -1,0 +1,286 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.home-container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.light-theme {
+  background-color: #ebebeb;
+  height: 100%;
+}
+
+.dark-theme {
+  background-color: #212121;
+  height: 100%;
+}
+
+.detail-video-container {
+  margin-left: 0;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.video-wrapper iframe,
+.video-wrapper .react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.no-search-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.no-search-img {
+  width: 500px;
+}
+
+.search-with-margin {
+  margin-top: 100px;
+}
+
+.no-search-title {
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+
+.light-no-search-title {
+  color: #212121;
+}
+
+.dark-no-search-title {
+  color: #f1f5f9;
+}
+
+.no-search-para {
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: #909090;
+}
+
+.retry-btn {
+  background-color: #4f46e5;
+  color: #f1f5f9;
+  font-family: 'Roboto';
+  width: 100px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.trending {
+  margin-top: 70px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.light-theme-trending {
+  background-color: #f1f5f9;
+}
+
+.dark-theme-trending {
+  background-color: #181818;
+}
+
+.light-theme-trend {
+  color: #212121;
+}
+
+.dark-theme-trend {
+  color: #f1f5f9;
+}
+
+.light-theme-menu-icon {
+  background-color: #e2e8f0;
+  color: #ff0000;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.dark-theme-menu-icon {
+  background-color: #000000;
+  color: #ff0000;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.detail-views {
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin: 5px 0;
+  padding: 0;
+  white-space: normal;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.light-detail-name {
+  color: #64748b;
+}
+
+.dark-detail-name {
+  color: #64748b;
+}
+
+.video-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-video {
+  display: flex;
+  align-items: center;
+}
+
+.light-detail-line {
+  border: #606060 1px solid;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.dark-detail-line {
+  border: #909090 1px solid;
+  margin-top: 40px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.profile-details {
+  display: flex;
+  align-items: center;
+}
+
+.detail-profile {
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.detail-title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.light-detail-title {
+  color: #181818;
+}
+
+.dark-detail-title {
+  color: #f1f5f9;
+}
+
+@media screen and (min-width: 768px) {
+  .home-container {
+    display: flex;
+    height: 100vh;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .home-content-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+  }
+
+  .home-content {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 100vh;
+  }
+
+  .main-content {
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  .no-search-title {
+    font-size: 20px;
+  }
+
+  .no-search-para {
+    font-size: 18px;
+  }
+
+  .video-details {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .detail-profile {
+    width: 60px;
+    height: 60px;
+  }
+
+  .detail-views {
+    font-size: 20px;
+  }
+
+  .detail-title {
+    font-size: 25px;
+  }
+}
